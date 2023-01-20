@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #09090a;
+
+  height: 100vh;
+
+  position: relative;
+}
+
+header {
+  background-color: #09090a;
+
+  padding: 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+
+  width: 100%;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  padding: 1rem 1.5rem;
+  border: 1px solid #8b5cf6;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  color: #ffffff;
+
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 125%;
+}
+
+#form-habits {
+  display: flex;
+  padding: 12rem 3rem 3rem;
+  width: fit-content;
+}
+
+.habits {
+  margin-top: 3.75rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.habit {
+  width: 4rem;
+  height: 4rem;
+
+  font-size: 1.5rem;
+
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.habit p {
+  font-size: 8.75pt;
+  text-align: center;
+
+  font-family: "Inter";
+  font-weight: 400;
+}
+
+.days {
+  display: flex;
+  gap: 3rem;
+  margin-left: 2rem;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.day div {
+  font-family: "Roboto Mono";
+  font-size: 1.25rem;
+  line-height: 125%;
+
+  text-align: center;
+  color: #a1a1aa;
+  margin-bottom: 0.5rem;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+
+  width: 4rem;
+  height: 4rem;
+
+  background: #18181b;
+  border: 2px solid #27272a;
+  border-radius: 0.5rem;
+}
+
+input[type="checkbox"]:checked {
+  border: 2px solid #a78bfa;
+  background: #8b5cf6;
+}
+
+@media (max-width: 770px) {
+  header button div {
+    display: none;
+  }
+}
